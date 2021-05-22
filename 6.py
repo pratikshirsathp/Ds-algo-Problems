@@ -1,5 +1,4 @@
-#User function Template for python3
-
+#finding union and intersection
 class Solution:    
     #Function to return the count of number of elements in union of two arrays.
     def doUnion(self,a,n,b,m):
@@ -13,6 +12,16 @@ class Solution:
             se.add(b[i])
         return(len(se))        
         
+        #intersection
+    def doIntersection(self,a,n,b,m):  
+        se2 = set()
+        for i in range(0,n):
+            se.add(a[i])
+        se3 = ser()   
+        for i in range (0,m)
+            if i in se2:
+                se3.add(b[i])
+        return(len(s2))                
             
 
 #{ 
@@ -29,4 +38,6 @@ if __name__=='__main__':
         ob=Solution()
         
         print(ob.doUnion(a,n,b,m))
+        
+        print(ob.doIntersection(a,n,b,m))
 # } Driver Code Ends
